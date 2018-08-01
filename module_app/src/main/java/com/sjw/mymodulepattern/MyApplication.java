@@ -20,6 +20,7 @@ public class MyApplication extends BaseApplication {
         super.onCreate();
         if (Utils.isAppDebug()) {
             //开启InstantRun之后，一定要在ARouter.init之前调用openDebug
+            //无语了
             ARouter.openDebug();
             ARouter.openLog();
         }
