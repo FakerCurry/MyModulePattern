@@ -26,6 +26,10 @@ versions.gradle_bintray_plugin="1.7.3"
 versions.bugly_crashreport="latest.release"
 versions.jpush="3.1.5"
 versions.jcore="1.2.3"
+versions.greendao_gradle_plugin="3.2.2"
+versions.greendao="3.2.2"
+versions.greendao_generator="3.2.2"
+
 
 def deps = [:]
 
@@ -62,6 +66,9 @@ deps.gradle_bintray_plugin="com.jfrog.bintray.gradle:gradle-bintray-plugin:$vers
 deps.bugly_crashreport="com.tencent.bugly:crashreport:$versions.bugly_crashreport"
 deps.jpush="cn.jiguang.sdk:jpush:$versions.jpush"
 deps.jcore="cn.jiguang.sdk:jcore:$versions.jcore"
+deps.greendao_gradle_plugin="org.greenrobot:greendao-gradle-plugin:$versions.greendao_gradle_plugin"
+deps.greendao="org.greenrobot:greendao:$versions.greendao"
+deps.greendao_generator="org.greenrobot:greendao-generator:$versions.greendao_generator"
 
 
 

@@ -9,10 +9,13 @@ import android.view.View;
 
 import com.luoshihai.xxdialog.DialogViewHolder;
 import com.luoshihai.xxdialog.XXDialog;
+import com.sjw.lib_common.entity.User;
+import com.sjw.lib_common.greendaoopr.DaoManager;
 import com.sjw.lib_common.utils.ToastUtils;
 import com.sjw.module_main.R;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -76,6 +79,19 @@ public class DemoActivity extends InstrumentedActivity implements TagAliasCallba
             }
         }.fromTop().fullWidth().showDialog().setCanceledOnTouchOutside(true);
 
+    }
+
+
+    public void greendao(View v) {
+        DaoManager.getInstance().deleteAllUser();
+        DaoManager.getInstance().insertUser(new User(null, "我好", 11, 99, "22"));
+        List<User> users = DaoManager.getInstance().searchAllUser();
+        String rst = "";
+        for (int i = 0; i < users.size(); i++) {
+            rst += users.toString();
+
+        }
+        ToastUtils.showLongToast(rst);
     }
 
 

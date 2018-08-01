@@ -15,4 +15,10 @@
         android:text="万能dialog"
         android:onClick="xxDialog"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据库greendao"
+        android:onClick="greendao"
+        />
 </LinearLayout>
