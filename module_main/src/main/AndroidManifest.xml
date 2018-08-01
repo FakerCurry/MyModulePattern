@@ -2,15 +2,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sjw.module_main">
 
-    <application
-        android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity">
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application android:theme="@style/AppTheme">
+        <activity android:name=".ui.GuideActivity">
+
+        </activity>
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity android:name=".ui.JpushDemoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

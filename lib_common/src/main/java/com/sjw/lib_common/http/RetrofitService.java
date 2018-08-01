@@ -15,5 +15,5 @@ import rx.Observable;
 
 public interface RetrofitService {
     @GET("book")
-    Observable<Book> getSearchBooks(@Query("type") String type);
+    Observable<Book> getSearchBooks(@Query("type") String type,@Query("page") String page);
 }

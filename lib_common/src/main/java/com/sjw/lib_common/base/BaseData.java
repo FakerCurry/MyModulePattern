@@ -17,7 +17,7 @@ public class BaseData {
     public static final String IMGBaseURL = "http://122.225.55.70:9022/broadcast/";//
 
     //
-    public static final String MvpURL = "http://172.16.0.38/admin/testandroid/";
+    public static final String MvpURL = "http://172.16.0.41/admin/testandroid/";
 
 
 

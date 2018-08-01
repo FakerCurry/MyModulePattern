@@ -11,10 +11,23 @@ android {
         targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0"
+        //-----------------每个要用到极光推送的都要这段配置
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
 
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.sjw.mymodulepattern",
+                JPUSH_APPKEY : "13acf59d24ad6a6000977450", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+        //-----------------每个要用到极光推送的都要这段配置
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [moduleName: project.getName()]
             }
         }
     }
@@ -46,7 +59,9 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':lib_common')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     annotationProcessor deps.arouter_compiler
+    implementation project(':lib_bgabanner_library')
 }

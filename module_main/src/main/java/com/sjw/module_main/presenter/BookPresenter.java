@@ -52,9 +52,9 @@ public class BookPresenter implements Presenter {
 
     @Override
     public void attachIncomingIntent(Intent intent) {
-}
+    }
     public void getSearchBooks(String type){
-        mCompositeSubscription.add(manager.getSearchBooks(type)
+        mCompositeSubscription.add(manager.getSearchBooks(type,"1")
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<Book>() {

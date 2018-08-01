@@ -28,7 +28,7 @@ public abstract class BaseActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ViewManager.getInstance().addActivity(this);
+        ActivityListUtil.getInstance().addActivity(this);
         //1.设置布局
         setLayoutId();
 ////        绑定butterknife

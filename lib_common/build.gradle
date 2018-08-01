@@ -4,15 +4,38 @@ android {
     compileSdkVersion build_versions.compile_sdk
 
     defaultConfig {
+
+       //-----------------每个要用到极光推送的都要这段配置
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.sjw.mymodulepattern",
+                JPUSH_APPKEY : "13acf59d24ad6a6000977450", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+        //-----------------每个要用到极光推送的都要这段配置
         minSdkVersion build_versions.min_sdk
         targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        //bugly使用
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
     }
-
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -23,7 +46,9 @@ android {
 }
 
 dependencies {
-    api fileTree(dir: 'libs', include: ['*.jar'])
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    api fileTree(include: ['*.jar'], dir: 'libs')
     api deps.support.app_compat
     api deps.constraint_layout
     api deps.logger
@@ -37,9 +62,27 @@ dependencies {
     //glide
     api deps.glide
     //event bus
-    api  deps.eventbus
+    api deps.eventbus
     //router
     api deps.arouter_api
-
-
+    //recyclerview
+    api deps.recyclerview
+    //上下拉刷新的
+    //    api project(':lib_recyclervier_refrensh')
+    api deps.xrefreshview
+    //卡片布局
+    api deps.cardview
+    //andpermission
+    //permission
+    api deps.permission
+    //自定义的Dialog
+    api deps.alertdialog
+    //bugly
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+    api deps.bugly_crashreport
+    //
+    // 此处以JPush 3.1.5 版本为例。
+    // 此处以JCore 1.2.3 版本为例。
+    api deps.jpush  // 此处以JPush 3.1.5 版本为例。
+    api deps.jcore  // 此处以JCore 1.2.3 版本为例。
 }

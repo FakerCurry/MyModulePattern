@@ -3,8 +3,12 @@ package com.sjw.lib_common.base;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -14,16 +18,20 @@ import android.view.WindowManager;
  */
 
 public abstract class BaseFragmentActivity extends FragmentActivity {
-//    //定义并且解除绑定控件
+
+    //    //定义并且解除绑定控件
 //    private Unbinder unbinder;
     //获取登录的标志
     //0是用户登录 1是个人登录
     private String flag;
 
+//    private MyActionBar actionBar;
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ViewManager.getInstance().addActivity(this);
+        ActivityListUtil.getInstance().addActivity(this);
         //1.设置布局
         setLayoutId();
 ////        绑定butterknife
@@ -41,6 +49,16 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
         setListener();
 
     }
+
+
+    /**
+     * 封装的findViewByID方法
+     */
+    @SuppressWarnings("unchecked")
+    protected <T extends View> T $(@IdRes int id) {
+        return (T) super.findViewById(id);
+    }
+
 
     /**
      * 判断网络
@@ -167,5 +185,67 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
+
+//    /**
+//     * //初始化loading
+//     */
+//    public void initLoading(SpinKitView spinKit) {
+//
+//        //初始化loading
+//        Sprite drawable = new Circle();
+//        drawable.setColor(ContextCompat.getColor(this, R.color.app_main_color));
+//        spinKit.setIndeterminateDrawable(drawable);
+//    }
+
+
+//    /**
+//     * 显示或者隐藏
+//     *
+//     * @param showType
+//     */
+//
+//    //0显示loading 1是没有网络 2没有数据 3是成功显示数据recycleview  4.都不显示
+//    public void showWhatView(int showType, View loading, StateLayout stateLayout, View hasDataview) {
+//        if (showType == 0) {
+//            loading.setVisibility(View.VISIBLE);
+//            stateLayout.setVisibility(View.GONE);
+//            hasDataview.setVisibility(View.GONE);
+//        } else if (showType == 1) {
+//            loading.setVisibility(View.GONE);
+//            hasDataview.setVisibility(View.GONE);
+//            stateLayout.setVisibility(View.VISIBLE);
+//            stateLayout.showNoNetworkView();
+//        } else if (showType == 2) {
+//            loading.setVisibility(View.GONE);
+//            hasDataview.setVisibility(View.GONE);
+//            stateLayout.setVisibility(View.VISIBLE);
+//            stateLayout.showEmptyView();
+//        } else if (showType == 3) {
+//            loading.setVisibility(View.GONE);
+//            hasDataview.setVisibility(View.VISIBLE);
+//            stateLayout.setVisibility(View.GONE);
+//        } else if (showType == 4) {
+//            loading.setVisibility(View.GONE);
+//            hasDataview.setVisibility(View.GONE);
+//            stateLayout.setVisibility(View.GONE);
+//        }
+//    }
+
+
+//    /**
+//     * 设置ActionBar
+//     *
+//     * @param strTitle
+//     * @param resIdLeft
+//     * @param strLeft
+//     * @param resIdRight
+//     * @param strRight
+//     * @param listener
+//     */
+//    protected void setMyActionBar(String strTitle, int resIdLeft, String strLeft, int resIdRight, String strRight, final ActionBarClickListener listener) {
+//        actionBar = (MyActionBar) findViewById(R.id.appbar);
+//        actionBar.setData(strTitle, resIdLeft, strLeft, resIdRight, strRight, listener);
+//    }
+
 
 }

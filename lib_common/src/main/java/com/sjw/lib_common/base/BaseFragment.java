@@ -73,7 +73,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ViewManager.getInstance().addActivity(getActivity());
+        ActivityListUtil.getInstance().addActivity(getActivity());
         initView(view);
         initData();
         judgeNet();

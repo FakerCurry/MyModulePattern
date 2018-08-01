@@ -7,11 +7,13 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.sjw.lib_common.base.BaseApplication;
 import com.sjw.lib_common.utils.Utils;
 
+
+
 /**
  * Created by pc on 2018/7/16.
  */
 
-public class MyApplication extends BaseApplication{
+public class MyApplication extends BaseApplication {
 
     @Override
     public void onCreate() {
@@ -22,6 +24,9 @@ public class MyApplication extends BaseApplication{
             ARouter.openLog();
         }
         ARouter.init(this);
+
+
+
     }
 
     @Override
@@ -30,5 +35,6 @@ public class MyApplication extends BaseApplication{
         // dex突破65535的限制
         MultiDex.install(this);
     }
+
 
 }

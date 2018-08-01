@@ -14,7 +14,7 @@ public class DataManager {
     public DataManager(){
         this.mRetrofitService = RetrofitHelper.getInstance().getServer();
     }
-    public  Observable<Book> getSearchBooks(String type){
-        return mRetrofitService.getSearchBooks(type);
+    public  Observable<Book> getSearchBooks(String type,String page){
+        return mRetrofitService.getSearchBooks(type,page);
     }
 }
