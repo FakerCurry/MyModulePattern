@@ -63,6 +63,9 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':lib_common')
     annotationProcessor deps.arouter_compiler
+//轮播图
     implementation project(':lib_bgabanner_library')
+    //万能dialog
+    implementation project(':lib_dialog')
 
 }

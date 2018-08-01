@@ -37,7 +37,25 @@ import java.util.regex.Pattern;
  */
 
 public class ToolsUtils {
+    //是否打印log
+    public static boolean isPrint = true;
 
+
+
+    /**
+     * 打印log
+     */
+
+    public static void printLog(String tag, String text) {
+        if (isPrint) {
+            Log.i(tag, text);
+
+        } else {
+
+
+        }
+
+    }
 
 
     public static void gotoSetNet(final Context context) {
@@ -86,7 +104,7 @@ public class ToolsUtils {
         try {
             bm = BitmapFactory.decodeResource(context.getResources(), imgResouce);
         } catch (OutOfMemoryError oom) {
-            CommonUtils.printLog("getSDCard", "OutOfMemoryError");
+            printLog("getSDCard", "OutOfMemoryError");
             System.gc();
             System.runFinalization();
         } finally {

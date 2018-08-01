@@ -16,7 +16,7 @@
         <activity
             android:name=".ui.WelcomeActivity"
             android:theme="@android:style/Theme.Translucent"></activity>
-        <activity android:name=".ui.JpushDemoActivity">
+        <activity android:name=".ui.DemoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

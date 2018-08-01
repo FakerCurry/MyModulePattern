@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\android\\android_studio_workspace\\MyModulePattern\\lib_dialog\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\android\\android_studio_workspace\\MyModulePattern\\lib_dialog\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,13,26,30,34,38,42,46,50",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,148,199,244,302,358,404,567,1119,1342,1562,1774,1988,2202,2418",
+                        "endLines": "2,3,4,5,6,7,8,12,25,29,33,37,41,45,49,53",
+                        "endColumns": "45,46,50,44,57,55,45,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "96,143,194,239,297,353,399,562,1114,1337,1557,1769,1983,2197,2413,2621"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\android\\android_some_demo\\android_dialog\\XXDialog-master\\XXDialog-master\\xxdialog\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\android\\android_some_demo\\android_dialog\\XXDialog-master\\XXDialog-master\\xxdialog\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,13,26,30,34,38,42,46,50",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,148,199,244,302,358,404,567,1119,1342,1562,1774,1988,2202,2418",
+                        "endLines": "2,3,4,5,6,7,8,12,25,29,33,37,41,45,49,53",
+                        "endColumns": "45,46,50,44,57,55,45,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "96,143,194,239,297,353,399,562,1114,1337,1557,1769,1983,2197,2413,2621"
+                    }
+                }
+            ]
+        }
+    ]
+}
