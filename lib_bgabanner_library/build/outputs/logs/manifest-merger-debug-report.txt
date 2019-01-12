@@ -1,23 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml:1:1-50
-INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml:1:1-50
-INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml:1:1-50
+ADDED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml:1:1-50
+INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml:1:1-50
+INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml:1:1-50
 	package
-		ADDED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml:1:11-48
-		INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
-		INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
+		ADDED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml:1:11-48
+		INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
+		INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml:1:1-50
 uses-sdk
-INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
-INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
-INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
-INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
+INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
+INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
+INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
+INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
-		ADDED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
-		INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
+		INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
+		ADDED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
+		INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
-		ADDED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
-		INJECTED from D:\android\android_studio_workspace\MyModulePattern\lib_bgabanner_library\src\main\AndroidManifest.xml
+		INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
+		ADDED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml
+		INJECTED from /Users/leadshow/Applications/android/android_studio_workspace/MyModulePattern/MyModulePattern/lib_bgabanner_library/src/main/AndroidManifest.xml

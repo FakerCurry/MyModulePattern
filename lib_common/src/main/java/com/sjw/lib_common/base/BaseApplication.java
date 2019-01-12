@@ -89,8 +89,7 @@ public class BaseApplication extends Application {
         CrashReport.initCrashReport(context, "7c3ae88cb7", true, strategy);
 // 如果通过“AndroidManifest.xml”来配置APP信息，初始化方法如下
 // CrashReport.initCrashReport(context, strategy);
-        JPushInterface.setDebugMode(true); 	// 设置开启日志,发布时请关闭日志
-        JPushInterface.init(this);     		// 初始化 JPush
+
 
            //数据库greendao
         setDatabase();

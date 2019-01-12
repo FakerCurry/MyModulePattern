@@ -2,10 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sjw.module_main">
 
-    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name="debug.MainApplication"
@@ -20,6 +16,7 @@
         </activity>
         <activity android:name=".ui.DemoActivity" />
         <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.WelcomeActivity"/>
         <activity android:name="debug.LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

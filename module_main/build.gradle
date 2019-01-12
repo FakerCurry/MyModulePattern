@@ -5,8 +5,11 @@ if (isModule.toBoolean()) {
 }
 
 android {
+
     compileSdkVersion build_versions.target_sdk
     defaultConfig {
+//        applicationId "com.sjw.module_main"
+
         minSdkVersion build_versions.min_sdk
         targetSdkVersion build_versions.target_sdk
         versionCode 1
@@ -19,7 +22,8 @@ android {
         }
 
         manifestPlaceholders = [
-                JPUSH_PKGNAME: "com.sjw.mymodulepattern",
+//                JPUSH_PKGNAME: "com.sjw.module_main",
+JPUSH_PKGNAME: "com.sjw.mymodulepattern",
                 JPUSH_APPKEY : "13acf59d24ad6a6000977450", //JPush上注册的包名对应的appkey.
                 JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
         ]
@@ -60,11 +64,11 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':lib_common')
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    api project(':lib_common')
+    api project(':lib_custom')
     annotationProcessor deps.arouter_compiler
-    //轮播图
-    implementation project(':lib_bgabanner_library')
-    //万能dialog
-    implementation project(':lib_dialog')
+//    //轮播图
+//    implementation project(':lib_bgabanner_library')
+//    //万能dialog
+//    implementation project(':lib_dialog')
 }

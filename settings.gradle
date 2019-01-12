@@ -1,1 +1,1 @@
-include ':module_app', ':lib_common', ':module_main', ':module_list', ':lib_bgabanner_library', ':lib_dialog'
+include ':module_app', ':lib_common', ':module_main', ':module_list', ':lib_bgabanner_library', ':lib_dialog', ':lib_custom', ':lib_jpush'

@@ -10,7 +10,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lib_bgabanner_library" />
             <option value="$PROJECT_DIR$/lib_common" />
+            <option value="$PROJECT_DIR$/lib_custom" />
             <option value="$PROJECT_DIR$/lib_dialog" />
+            <option value="$PROJECT_DIR$/lib_jpush" />
             <option value="$PROJECT_DIR$/module_app" />
             <option value="$PROJECT_DIR$/module_list" />
             <option value="$PROJECT_DIR$/module_main" />

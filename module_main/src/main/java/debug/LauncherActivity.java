@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.sjw.lib_common.base.BaseActivity;
 import com.sjw.module_main.ui.DemoActivity;
+import com.sjw.module_main.ui.WelcomeActivity;
 
 /**
  * Created by pc on 2018/8/1.
@@ -31,7 +32,7 @@ public class LauncherActivity extends BaseActivity {
 
         Bundle bundle = new Bundle();
         bundle.putString("needValue", "LauncherValue");
-        startActivity(DemoActivity.class, bundle, true);
+        startActivity(WelcomeActivity.class, bundle, true);
     }
 
     @Override

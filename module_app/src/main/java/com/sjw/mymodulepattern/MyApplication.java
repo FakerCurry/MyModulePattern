@@ -7,6 +7,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.sjw.lib_common.base.BaseApplication;
 import com.sjw.lib_common.utils.Utils;
 
+import cn.jpush.android.api.JPushInterface;
 
 
 /**
@@ -25,7 +26,8 @@ public class MyApplication extends BaseApplication {
             ARouter.openLog();
         }
         ARouter.init(this);
-
+        JPushInterface.setDebugMode(true); 	// 设置开启日志,发布时请关闭日志
+        JPushInterface.init(this);     		// 初始化 JPush
 
 
     }

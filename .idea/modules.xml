@@ -3,10 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyModulePattern.iml" filepath="$PROJECT_DIR$/MyModulePattern.iml" />
-      <module fileurl="file://D:\android\android_studio_workspace\MyModulePattern\module_app\app.iml" filepath="D:\android\android_studio_workspace\MyModulePattern\module_app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_bgabanner_library/lib_bgabanner_library.iml" filepath="$PROJECT_DIR$/lib_bgabanner_library/lib_bgabanner_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_common/lib_common.iml" filepath="$PROJECT_DIR$/lib_common/lib_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_custom/lib_custom.iml" filepath="$PROJECT_DIR$/lib_custom/lib_custom.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_dialog/lib_dialog.iml" filepath="$PROJECT_DIR$/lib_dialog/lib_dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_jpush/lib_jpush.iml" filepath="$PROJECT_DIR$/lib_jpush/lib_jpush.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_app/module_app.iml" filepath="$PROJECT_DIR$/module_app/module_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_list/module_list.iml" filepath="$PROJECT_DIR$/module_list/module_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_main/module_main.iml" filepath="$PROJECT_DIR$/module_main/module_main.iml" />
